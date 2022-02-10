@@ -1,0 +1,251 @@
+body {
+    background-image: url(images/beach.jpg);
+    font-family: calibri;
+} 
+
+h1 {
+    font-family: calibri;
+    font-weight: bold;
+}
+
+.innerlink {
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+}
+.innerlink:hover{
+    text-decoration: firebrick underline;
+    font-size: 1.25em;
+}
+
+.innerlink:visited {
+    color: lightcoral;
+    text-decoration: none;
+}
+ 
+ /*FOR DROPDOWN NAV MENU*/
+
+        /*main nav*/
+        #navigation {
+            width: 98%;
+            height: 50px;
+            margin: 0;
+            position: fixed;
+            top: 0;
+            padding: 4px 3px 0;
+            line-height: 100%;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+            -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+            background: linear-gradient(#f8cf17, #fa8a0b);
+            background: -webkit-linear-gradient(#f8cf17, #fa8a0b);
+            z-index: 100;
+        }
+
+        /*list items*/
+        #navigation li {
+            width: 280px;
+            text-align: center;
+            margin: 0 5px;
+            padding: 0 0 8px;
+            float: left;
+            position: relative;
+            list-style: none;
+        }
+
+        /*top level links*/
+        #navigation a {
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 8px 20px;
+            margin: 0;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            text-shadow: 0 1px 1px #554830;
+        }
+
+        /*styles for top level links on hover*/
+        #navigation .current a, #nav li:hover > a {
+            background: linear-gradient(#6d6d6d, #a1a1a1);
+            background: -webkit-linear-gradient(#6d6d6d, #a1a1a1);
+            color: #444;
+            border-top: solid 1px #f8f8f8;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+            -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+            text-shadow: 0 1px 1 rgba(255, 255, 255, 0.8);
+        }
+
+        /* styles for dropdowns on hover*/
+        #navigation ul li:hover a, #nav li:hover li a {
+            background: none;
+            border: none;
+            color: #666;
+            box-shadow: none;
+            -webkit-box-shadow: none;
+        }
+
+        /*dropdown links on hover*/
+        #navigation ul a:hover {
+            background: #d44503 !important;
+            background: gradient(#ec0404,#b36538);
+            color: #fff !important;
+            border-radius: 0;
+            -webkit-border-radius: 0;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+        }
+
+        /*display main menu bar*/
+        #navigation {
+            display: inline-block;
+        }
+
+        /*drops down menu items*/
+        #navigation li:hover > ul {
+            display: block;
+        }
+
+        /*styles for level 2 links*/
+        #navigation ul {
+            background: rgb(248, 150, 3);
+            background: gradient(#fff,#cfcfcf);
+            display: none;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            top: 35px;
+            left:0;
+            border: solid 1px #b4b4b4;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+            -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+        }
+
+        /*set dimentions of dropdown items*/
+        #navigation ul li {
+            float: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        /*set styling for 2nd dropdown menu text*/
+        #navigation ul a {
+            text-align: left;
+            font-weight: normal;
+            text-shadow: 0 1px 1px rgba(255, 255, 255, 0.9);
+            color: cornsilk;
+        }
+
+        /*level 3 lists fly out*/
+        #navigation ul ul {
+            color: cornsilk;
+            left: 240px;
+            top: -3px;
+        }
+
+        #wrapper {
+            margin: 0 auto;
+        }
+
+        #logodiv {
+            position: absolute;
+            top: 54px;
+            left: 0px;
+            width: auto;
+            margin: 0%;
+            padding: 0%;
+        }
+        #logo {
+            width: 100%;
+        }
+
+        #content {
+            width: 70%;
+            margin: auto;
+            position: absolute;
+            top: 249px;
+            left: 15%;
+            background-color: rgb(221, 162, 0);
+        }
+
+        #footer {
+            width: 100%;
+            background-color: darkgreen;
+            z-index: 99;
+            text-align: center;
+            clear: both;
+        }
+
+        #puppydog {
+            width: 150px;
+            height: 100px;
+            display: inline;
+            float: right;
+        }
+        #kittycat {
+            width: 150px;
+            height: 100px;
+            display: inline;
+            float: left;
+        }
+
+        .icon {
+            width: 150px;
+            height: 100px;
+        }
+
+        .pricingtable {
+            border: 1px solid black;
+            width: 70%;
+            margin: 20px;
+            padding: 15px;
+            color: rgb(128, 0, 0);
+            background-color: rgb(255, 208, 0);
+    }
+
+    .tablehead {
+        margin: 15px;
+        font-weight: bold;
+        font-size: 18px;
+        color: rgb(66, 29, 29);
+    }
+
+   .pricingtable th {
+        color:rgb(226, 243, 71);
+        background-color: rgb(128, 26, 0);
+    }
+
+   .pricingtable tr:nth-child(even){ /* even or odd*/
+        background-color: rgb(177, 189, 107);
+    }
+
+#imgs {
+    width: 150px;
+    float: right;
+}
+
+.form1 {
+    font-family: arial;
+    border: 2px solid black;
+    font-family: arial;
+        /*auto margins for placement in moving/resizing browser window
+        clear: both; = clears either side of element to its own line */
+    }
+
+input:focus:required:invalid {
+    background-color: rgb(255, 148, 148);
+    color: #fff;
+}
+
+.review {
+    font-size: 15px;
+    color: black;
+}
+
+.review > em {
+    color: brown;
+}
+
+    

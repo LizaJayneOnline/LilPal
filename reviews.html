@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="US-en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reviews - Lil' Pal Pet Sitting </title>
+    <meta name="author" content="LizaFenton">
+    <meta name="description" content="A site for people looking for help with their furry lil' pals">
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <style>
+        #tennisball {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        #spinnerball {
+                width: 100px;
+                height: 100px;
+                color: wheat;
+                line-height: 100px;
+                position: relative;
+                animation: ballmove 1.2s infinite;
+                -webkit-animation: ballmove 1.2s infinite;
+                -ms-animation: ballmove 1.2s infinite;
+            }
+
+            @keyframes ballmove {
+            0% { transform: rotate(0deg); left: 1px; top: 8px; }
+	        10% { transform: rotate(36deg); left: 79px; top: 8px;}
+            20% { transform: rotate(72deg); left: 158px; top: 8px;}
+            30% { transform: rotate(108deg); left: 237px; top: 8px;}
+            40% { transform: rotate(144deg); left: 316px; top: 8px;}
+            50% { transform: rotate(180deg); left: 395px; top: 8px;}
+            60% { transform: rotate(216deg); left: 474px; top: 8px;}
+            70% { transform: rotate(252deg); left: 553px; top: 8px;}
+            80% { transform: rotate(288deg); left: 632px; top: 8px;}
+            90% { transform: rotate(324deg); left: 711px; top: 8px;}
+            100% { transform: rotate(360deg); left: 785px; top: 8px;}
+            }
+
+            h4 {
+                font-family: calibri;
+                font-variant: small-caps;
+                text-decoration: brown underline;
+                font-size: 18px;
+                color: rgba(128, 39, 4, 0.863);
+            }
+
+            #frog {
+                margin-left: 10px;
+            }
+
+            #rat {
+                margin-right: 10px;
+            }
+
+            #submitbutton  {
+                background-color: #b36538;
+                color: rgb(58, 21, 0);
+                font-size: 12px;
+                font-variant: small-caps;
+            }
+            
+
+    </style>
+
+</head>
+<body>
+    <div id="wrapper">
+    <nav>
+        <ul id="navigation">
+            <li id="home"><a href="index.html">HOME</a></li>
+            <li id="services"><a href="#">SERVICES &darr; </a> 
+                <ul id="servicesinner">
+                    <li id="location"><a href="location.html">Location</a></li>
+                    <li id="offer"><a href="#">What we offer &#8594; </a>
+                        <ul id="offerinner">
+                            <li id="newfriend"><a href="newfriend.html">New Friend Visit</a></li>
+                            <li id="walk"><a href="walkiesfeeds.html">Walkies & Feeds</a></li>
+                            <li id="overnights"><a href="overnights.html">Overnights</a></li>
+                            <li id="emergency"><a href="24hour.html">24-hour Emergency Callout</a></li>
+                        </ul><!--offerinner-->
+                    </li>
+                    <li id="pricing"><a href="pricing.html">Pricing</a></li>
+                    <li id="gallery"><a href="gallery.html">Gallery</a></li>
+                </ul><!--servicesinner-->
+            </li>
+            <li id="reviews"><a href="reviews.html">REVIEWS</a></li>
+            <li id="contact"><a href="contactus.html">CONTACT &nbsp; US</a></li>
+        </ul><!--navigation-->
+        </nav>
+<div id="logodiv">        
+<img id="logo" src="images/lilpal.png" alt="lil pal logo">
+</div><!--logodiv-->
+
+<div id="content">
+    <h1 style="text-align: center; line-height: 100px;"><img class="icon" id="frog" alt="a froggie" src="images/frog.jpg" style="float: left;"> Reviews <img class="icon" id="rat" alt="a rat" src="images/rat.jpg" style="float: right;"></h1>
+        <br>
+
+        <div id="submit" class="form1" style="border:10px;">
+            <form novalidate autocomplete="off">
+                <!--autocomplete gets turned "OFF" for the whole form, and "ON" for specific fields. Not the other way round-->
+                <table style="border: 10px solid #fa8a0b; width: 100%;">
+                        <td><h4>SUBMIT A REVIEW</h4> <!--SMALLCAPS THIS--></td>
+                    <tr>
+                        <td width="150px"> <label for="humanname">Human's Name:  </label></td>
+                        <td><input id="humanname" type="text" name="humanname" size="10" maxlength="20" placeholder="Person Person"><!--size/maxlength measured in characters--> </td>
+                    </tr>
+                    <tr>
+                        <td width="150px"> <label for="petname">Pet's Name*:  </label></td>
+                        <td><input id="petname" type="text" name="petname" size="10" maxlength="20" placeholder="Pet McPet" autofocus required><!--size/maxlength measured in characters--> 
+                    </tr>
+                    <tr> <!--dropdown box-->
+                        <td><label for="pettype">Pet Type*:  </label></td>
+                        <td>
+                            <select name="pettype" required>
+                                <option value="cattype" id="cattype">Cat</option>
+                                <option value="dogtype" id="dogtype">Dog</option>
+                                <option value="birdtype" id="birdtype">Bird</option>
+                                <option value="fishtype" id="fishtype">Fish</option>
+                                <option value="smalltype" id="smalltpye">Small Mammals</option>
+                                <option value="reptiletype" id="reptiletype">Reptile</option>
+                                <option value="farmtype" id="farmtype">Farm Animal</option>
+                                <option value="exotictype" id="exotictype">Exotic Animal</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr> <!--dropdown box-->
+                        <td><label for="stars">Stars (out of 5)*:  </label></td>
+                        <td>
+                            <select name="stars" required>                                             
+                                <option value="fivestar" id="fivestar">&#9734; &#9734; &#9734; &#9734; &#9734;</option>
+                                <option value="fourstar" id="fourstar">&#9734; &#9734; &#9734; &#9734;</option>
+                                <option value="threestar" id="threestar">&#9734; &#9734; &#9734; </option>
+                                <option value="twostar" id="twostar">&#9734; &#9734; </option>
+                                <option value="onestar" id="onestar">&#9734; </option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr> <!--TEXT AREA-->
+                        <td>Review:  </td>
+                        <td><textarea name="comments" cols="50" rows="10" placeholder="Thank you for your feedback! (250 characters)" maxlength="250"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td width="150px"><input id="submitbutton" type="submit" value="Submit Your Review"></td>
+                    </tr>
+                 </table>
+            </form> 
+        </div><!--submit--><br>
+
+        <div id="spinnerball" > <img src="images/tennisball.jpg" alt="tennisball" id="tennisball"> </div>
+
+        <h4>RECENT REVIEWS</h4>
+
+        <div id="review1" class="review">
+            Pet Name: Aaaaa Aaaaaaaaa<br>
+            Reviewed On: 14/11/2021<br>
+            Stars: &#9734; &#9734; &#9734; &#9734; &#9734;<br>
+            Review: <em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos natus facere nihil provident iure quod? Pariatur voluptatem obcaecati unde exercitationem sapiente temporibus, officiis natus veniam.</em><br>
+        </div><!--review1--> <br><br>
+        <div id="review2" class="review">
+            Pet Name: Aaaaa Aaaaaaaaa<br>
+            Reviewed On: 14/11/2021<br>
+            Stars: &#9734; &#9734; &#9734; &#9734; &#9734;<br>
+            Review: <em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos natus facere nihil provident iure quod? Pariatur voluptatem obcaecati unde exercitationem sapiente temporibus, officiis natus veniam.</em><br>
+        </div><!--review2--> <br><br>
+        <div id="review3" class="review">
+            Pet Name: Aaaaa Aaaaaaaaa<br>
+            Reviewed On: 14/11/2021<br>
+            Stars: &#9734; &#9734; &#9734; &#9734; &#9734;<br>
+            Review: <em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos natus facere nihil provident iure quod? Pariatur voluptatem obcaecati unde exercitationem sapiente temporibus, officiis natus veniam.</em><br>
+        </div><!--review3-->  <br><br>
+        <div id="review4" class="review">
+            Pet Name: Aaaaa Aaaaaaaaa<br>
+            Reviewed On: 14/11/2021<br>
+            Stars: &#9734; &#9734; &#9734; &#9734; &#9734;<br>
+            Review: <em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos natus facere nihil provident iure quod? Pariatur voluptatem obcaecati unde exercitationem sapiente temporibus, officiis natus veniam.</em><br>
+        </div><!--review4-->  <br><br>
+
+
+<div id="footer">Lil Pal Pet Sitting &copy; | All Rights Reserved | Liza Fenton 
+    </div><!--footer-->
+
+</div><!--content-->
+</div> <!--wrapper-->
+
+</body>
+</html>
+
